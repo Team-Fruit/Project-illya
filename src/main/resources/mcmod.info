@@ -1,13 +1,13 @@
 [
 {
-  "modid": "autoinputmod",
-  "name": "AutoInputMod",
-  "description": "Minecraft life come in handy!",
-  "version": "${version}",
+  "modid": "Project-illya",
+  "name": "Project-illya",
+  "description": "Pre-Alpha Version",
+  "version": "0.0.1.0pre-alpha",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["Kamesuta", "sjcl"],
+  "authorList": ["sjcl"],
   "credits": "(c)2016 TeamFruit",
   "logoFile": "",
   "screenshots": [],

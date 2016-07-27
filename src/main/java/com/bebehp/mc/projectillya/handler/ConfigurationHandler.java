@@ -37,16 +37,16 @@ public class ConfigurationHandler {
 	}
 
 	public static void loadConfiguration() {
-		propRubyEnable = configuration.get("Ore Generation", "Generate Ruby Ore",RUBY_ENABLE_DEFAULT);
+		propRubyEnable = configuration.get("ore generation", "Generate Ruby Ore",RUBY_ENABLE_DEFAULT);
 		rubyEnable = propRubyEnable.getBoolean();
 
-		propSapphireEnable = configuration.get("Ore Generation", "Generate Sapphire Ore",RUBY_ENABLE_DEFAULT);
+		propSapphireEnable = configuration.get("ore generation", "Generate Sapphire Ore",RUBY_ENABLE_DEFAULT);
 		sapphireEnable = propSapphireEnable.getBoolean();
 
-		propPeridotEnable = configuration.get("Ore Generation", "Generate Peridot Ore",RUBY_ENABLE_DEFAULT);
+		propPeridotEnable = configuration.get("ore generation", "Generate Peridot Ore",RUBY_ENABLE_DEFAULT);
 		peridotEnable = propPeridotEnable.getBoolean();
 
-		propTopazEnable = configuration.get("Ore Generation", "Generate Topaz Ore",RUBY_ENABLE_DEFAULT);
+		propTopazEnable = configuration.get("ore generation", "Generate Topaz Ore",RUBY_ENABLE_DEFAULT);
 		topazEnable = propTopazEnable.getBoolean();
 
 		if (configuration.hasChanged()) {

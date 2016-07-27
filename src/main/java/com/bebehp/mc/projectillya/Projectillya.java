@@ -15,10 +15,11 @@ import cpw.mods.fml.common.event.FMLServerStoppingEvent;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class Projectillya {
+
 	@Instance(Reference.MODID)
 	public static Projectillya instance;
 
-	@SidedProxy(clientSide = Reference.PROXY_CLIENT)
+	@SidedProxy(serverSide = Reference.PROXY_SERVER, clientSide = Reference.PROXY_CLIENT)
 	public static CommonProxy proxy;
 
 	@EventHandler
