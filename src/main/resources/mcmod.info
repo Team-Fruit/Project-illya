@@ -3,7 +3,7 @@
   "modid": "Project-illya",
   "name": "Project-illya",
   "description": "Pre-Alpha Version",
-  "version": "0.0.1.0pre-alpha",
+  "version": "0.0.4.3pre-alpha",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
