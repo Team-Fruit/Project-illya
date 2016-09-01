@@ -29,9 +29,8 @@ public class ItemGem extends Item{
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(final IIconRegister iicon) {
-		for (int i = 0; i < 4; i ++) {
+		for (int i = 0; i < 4; i ++)
 			this.iicon[i] = iicon.registerIcon(getIconString() + "." + i);
-		}
 	}
 
 	@Override
@@ -43,9 +42,8 @@ public class ItemGem extends Item{
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void getSubItems(final Item item, final CreativeTabs creativeTab, final List list) {
-		for (int i = 0; i < 4; i ++) {
+		for (int i = 0; i < 4; i ++)
 			list.add(new ItemStack(this, 1, i));
-		}
 	}
 
 	@Override

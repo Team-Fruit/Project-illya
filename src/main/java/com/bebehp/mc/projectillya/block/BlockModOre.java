@@ -24,7 +24,6 @@ public class BlockModOre extends Block {
 	private final IIcon[] iicon = new IIcon[4];
 	private final Random random = new Random();
 
-
 	protected BlockModOre() {
 		super(Material.rock);
 		setCreativeTab(ClientProxy.tabIllya);
@@ -69,10 +68,10 @@ public class BlockModOre extends Block {
 	@Override
 	public int quantityDroppedWithBonus(final int fortune, final Random random) {
 		if (fortune > 0 && Item.getItemFromBlock(this) != getItemDropped(0, random, fortune)) {
-			int i = random.nextInt(fortune + 2) - 1;
+			int i = random.nextInt(fortune+2)-1;
 			if (i < 0)
 				i = 0;
-			return this.quantityDropped(random) * (i + 1);
+			return this.quantityDropped(random)*(i+1);
 		} else {
 			return this.quantityDropped(random);
 		}

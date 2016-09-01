@@ -1,9 +1,10 @@
 package com.bebehp.mc.projectillya.client;
 
+import com.bebehp.mc.projectillya.item.ModItems;
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 
 public class ModCreativeTab extends CreativeTabs {
@@ -15,6 +16,6 @@ public class ModCreativeTab extends CreativeTabs {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public Item getTabIconItem() {
-		return Items.lava_bucket;
+		return ModItems.gem;
 	}
 }
